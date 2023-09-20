@@ -1,0 +1,680 @@
+@font-face {
+  font-family: 'Jockey one';
+  src: url(./fonts/JockeyOne-Regular.ttf);
+}
+
+body{
+  background-color: rgba(220, 30, 42, 1); 
+  font-family: Jockey One;
+  color: rgb(247, 246, 246);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner-copas{
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.copas {
+  width: 33%;
+}
+
+h1 {
+  font-size: 4.5rem;
+  text-align: center;
+  margin-top: .625rem;
+}
+
+.banner-logo{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: .625rem;
+  margin-bottom: 2.5rem;
+}
+
+.escudo-logo {
+  height: 20rem;
+}
+
+.texto-copas-inter, .texto-copas-nacio p {
+  font-size: 1.125rem;
+  margin-bottom: .3125rem;
+  gap: .0625rem;
+}
+
+.texto-copas-inter-media, .texto-copas-nacio-media{
+  display: none;
+}
+
+.nav-cont {
+  margin-top: 0rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.barra-nav {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(179, 19, 18, 1);
+  list-style: none;
+  margin-top: 0rem;
+  padding-left: 0px;
+}
+
+.barra-nav li a{
+  font-size: 1.125rem;
+  color: #F1ECEA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.carrousel-cont {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.carrousel{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(179, 19, 18, 1);
+  width: 80%;
+  height: 10.9375rem;
+  border-radius: 3.125rem;
+  border-color: rgba(153, 5, 4, 1);
+  box-shadow: 5px 5px 5px rgba(153, 5, 4, 1);
+}
+
+.carrousel img{
+  width: 7.5rem;
+  height: 8.75rem;
+}
+
+.news-container{
+  display: grid;
+  height: 25rem;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2, 12.5rem);
+  gap: .3125rem;
+  margin-left: 2.5rem;
+  margin-right: 1.875rem;
+}
+
+article {
+  width: 100%;
+  height: 100%;
+}
+
+.art-1 {
+  background: url(https://www.infiernorojo.com/independiente/wp-content/uploads/2023/09/F4k9Ld9WsAAZUIJ-e1693604372702-1000x563.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+
+.art-2{
+  background: url(https://www.cronica.com.ar/__export/1694035935702/sites/cronica/img/2023/09/06/carlos_tevez_independiente_1_crop1694035503610.jpg_1480801792.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+.art-3{
+  background: url(https://media.tycsports.com/files/2023/09/01/612844/santiago-toloza_416x234.webp?v=1);
+  background-size: cover;
+  background-position: center;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.art-4 {
+  background: url(https://locoxelrojo.com/independiente/wp-content/uploads/2023/09/Independiente-hinchada-fuegos-artificiales-741x486.jpg);
+  background-size: cover;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.article div{
+  background-color: RGBA(220, 30, 42, 1);
+  color: #F1ECEA;
+  width: fit-content;
+  padding-left: .1875rem;
+  padding-right: .1875rem;
+}
+
+.section, .section-2{
+  position: relative;
+  font-size: .75rem;
+  left: .1875rem;
+}
+
+.title {
+  position: relative;
+  left: .625rem;
+  top: 18.75rem;
+  font-size: 1.125rem;
+}
+
+.title-2{
+  position: relative;
+  left: .625rem;
+  top: 6.25rem;
+  font-size: 1.125rem;
+}
+
+.actualidad-cont {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1.25rem;
+}
+
+.next-match-box {
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+  width: 13.75rem;
+  height: 15rem;
+  background-color: #e0e0e0;
+  color: rgba(179, 19, 18, 1);;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+  border-radius: .9375rem;
+  padding: .3125rem;
+  box-shadow: .3125rem .3125rem .3125rem rgba(153, 5, 4, 1);
+}
+
+.last-match, .next-match {
+  width: 10.9375rem;
+}
+
+.title-next-match {
+  font-family: 'Jockey one';
+  font-size: 1.125rem;
+  text-align: center;
+  margin-top: .3125rem;
+  margin-bottom: 1.25rem;
+}
+
+.next-match-box p {
+  margin-left: .9375rem;
+  line-height: .1875rem;
+}
+
+.teams-logo-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.teams-logo-box img{
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: .3125rem;
+}
+
+.teams-logo-box p {
+  font-size: 1.5rem;
+}
+
+.teams-box {
+  display: flex;
+  flex-direction: row;
+  width: 8.4375rem;
+  align-items: center;
+  
+}
+
+.teams-box div{
+  width: 2.8125rem;
+  height: 1.5625rem;
+}
+
+.local-team {
+  background-color: rgba(179, 19, 18, 1);
+  color: #F1ECEA;
+}
+
+.versus {
+  background-color: grey;
+  color: rgb(54, 54, 54);
+}
+
+.away-team {
+  background-color: blue;
+  color: black;
+}
+
+.match-details p {
+  font-size: .75rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  background-color: grey;
+  color: rgb(54, 54, 54);
+}
+
+th {
+  background-color: rgb(199, 199, 199);
+  font-weight: bold;
+}
+
+td, th {
+  vertical-align: top;
+  text-align: center;
+  padding: .1875rem;
+  border-bottom: .0625rem solid rgb(139, 138, 138);
+}
+
+h2{
+  font-size: 2.25rem;
+  text-decoration: underline;
+  margin-left: 1.875rem;
+  margin-top: 1.25rem;
+}
+
+h3 {
+  margin-left: 2.1875rem;
+}
+
+
+.historia-box p{
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.historia-box img {
+  width: 12.5rem;
+  height: 15.625rem;
+  float: right;
+  margin-right: 2.5rem;
+}
+
+#copas-historia{
+  width: 400px;
+}
+
+.log-in-cont{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.125rem;
+  margin-top: 3.125rem;
+  text-align: center;
+}
+
+.log-in-box{
+  display: flex;
+  flex-direction: column;
+  background-color:rgba(179, 19, 18, 1);
+  text-align:center;
+  width:18.75rem;
+  line-height: 1.875rem;
+  border-radius: .625rem;
+  border: none;
+  box-shadow: .1875rem .1875rem .3125rem rgba(153, 5, 4, 1);
+  padding: .625rem;
+}
+
+.log-in-box label {
+  margin-bottom: .3125rem;
+  text-align: left;
+}
+
+.log-in-box input{
+  background-color: rgb(131, 2, 2);
+  color: rgb(247, 246, 246);
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: .3125rem;
+  border: none;
+}
+
+.submit-button{
+  padding: .3125rem;
+  width: 4.6875rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: .625rem;
+}
+
+::placeholder {
+  color: rgb(247, 246, 246);
+  font-size: .75rem;
+  
+}
+
+.socios-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.socios-box button {
+  background-color: rgba(153, 5, 4, 1);
+  color: rgb(247, 246, 246);
+  font-family: 'Jockey One';
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 6.25rem;
+  box-shadow: .1875rem .1875rem rgb(122, 2, 2);
+  border: none;
+  cursor: pointer;
+}
+
+.filtro-box{
+  background-color: rgba(179, 19, 18, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: .4375rem;
+  margin-top: .625rem;
+  margin-right: 1.5625rem;
+  margin-left: 1.5625rem;
+  margin-bottom: 2.5rem;
+}
+
+.filtro-box p{
+  background-color: rgba(179, 19, 18, 1);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.catalogo-box{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.ropa-box{
+  background-color: rgba(179, 19, 18, 1);
+  width: 11.25rem;
+  height: 18.75rem;
+  margin-bottom: 2.8125rem;
+}
+
+.ropa-foto{
+  width: 100%;
+  height: 15.625rem;
+}
+
+.ropa-box p{
+  background-color: rgba(179, 19, 18, 1);
+  margin-top: .3125rem;
+  text-align: center;
+}
+
+.contactos-cont{
+  background-color: rgba(179, 19, 18, 1);
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-size: 1.125rem;
+  margin-top: .625rem;
+}
+
+.redes-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.redes-box img{
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0rem;
+}
+
+.banner-tienda{
+  width: 100%;
+  height: 25rem;
+}
+
+
+@media (max-width: 1024px) {
+  .catalogo-box{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .texto-copas-inter p{
+    margin-left: .625rem;
+  }
+
+  .texto-copas-nacio p {
+    margin-right: .625rem;
+  }
+
+  .carrousel {
+    display: none;
+  }
+
+  .news-container{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,18.75rem);
+    height: fit-content;
+  }
+
+  .art-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .art-2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .art-3{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .art-4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .title {
+    top: 12.5rem;
+  }
+
+  .title-2{
+    top: 12.5rem;
+  }
+
+  .mail {
+    display: none;
+  }
+
+  .actualidad-cont{
+    justify-content: center;
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .barra-nav li a{
+    font-size: 16px;
+  }
+
+  .texto-copas-inter, .texto-copas-nacio{
+    display: none;
+  }
+
+  .texto-copas-inter-media, .texto-copas-nacio-media{
+    display: flex;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.875rem;
+    margin-left: 0rem;
+  }
+
+  h3{
+    text-align: center;
+    margin-left: 0rem;
+  }
+
+  .actualidad-cont{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .last-match {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .next-match {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .positions{
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  .historia-box {
+    text-align: center;
+  }
+
+  .historia-box img {
+    width: 10.9375rem;
+    height: 12.5rem;
+    float:none;
+    margin-right: 0px;
+  }
+
+  .banner-tienda{
+    display: none;
+  }
+}
+
+@media (max-width: 660px) {
+  .texto-copas-inter-media, .texto-copas-nacio-media{
+    font-size: 1rem;
+  }
+
+  .contactos-cont {
+    font-size: .75rem;
+  }
+
+  .redes-box img{
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+
+  .redes-box p {
+    margin-bottom: .125rem;
+  }
+
+  .catalogo-box{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px){
+  .texto-copas-inter-media, .texto-copas-nacio-media{
+    display: none;
+  }
+}
+
+@media (max-width: 445px) {
+  .barra-nav li a{
+    font-size: .875rem;
+  }
+
+  .news-container{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4, 18.75rem);
+  }
+
+  .art-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .art-2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .art-3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .art-4{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  h1{
+    font-size: 3.375rem;
+  }
+
+  .actualidad-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  #copas-historia {
+    width: 18.75rem;
+  }
+
+  .catalogo-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .filtro-box p{
+    font-size: .875rem;
+  }
+
+  .log-in-box {
+    width: 15.625rem;
+  }
+}
+
+@media (max-width: 355px) {
+  h1{
+    font-size: 3rem;
+  }
+
+  .escudo-logo {
+    width: 18.75rem;
+    height: 17.1875rem;
+  }
+
+  .contactos-cont {
+    font-size: .625rem;
+  }
+
+  .filtro-box p{
+    font-size: .75rem;
+  }
+}
