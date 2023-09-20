@@ -104,7 +104,7 @@ h1 {
 
 .news-container{
   display: grid;
-  height: 25rem;
+  height: fit-content;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(2, 12.5rem);
   gap: .3125rem;
@@ -474,7 +474,6 @@ h3 {
   .news-container{
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,18.75rem);
-    height: fit-content;
   }
 
   .art-1 {
