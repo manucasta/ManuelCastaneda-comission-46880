@@ -12,14 +12,17 @@ body{
   box-sizing: border-box;
 }
 
+body ::selection {
+  background-color: rgb(247, 246, 246);
+  color: rgba(220, 30, 42, 1);
+}
+
 .banner-copas{
-  display: inline-flex;
-  justify-content: center;
   width: 100%;
 }
 
-.copas {
-  width: 33%;
+.copas{
+  width: 100%;
 }
 
 h1 {
