@@ -18,9 +18,12 @@
       </div>
 
       <nav class="nav-cont">
-        <ul class="barra-nav">
+        <ul class="barra-nav p-1">
           <li>
-            <a class="" href="#">Inicio</a>
+            <div class="d-flex justify-content-end flex-nowrap">
+              <img class="me-3" src="./assets/images/escudo independiente menu.jpg" alt="">
+              <a href="#">Inicio</a>
+            </div>
           </li>
           <li>
             <a href="./pages/historia.html">Historia</a>
@@ -70,14 +73,45 @@
     </header>
 
     <main>
-      <section class="carrousel-cont">
-        <div class="carrousel">
-          <a href="./pages/historia.html"><img src="./assets/images/primer escudo.png" alt="historia enlace"></a>
-          <a href="./pages/plantel.html"><img src="./assets/images/plantel-logo.png" alt="plantel enlace"></a>
-          <a href="./pages/tienda.html"><img src="./assets/images/tienda-logo.png" alt="tienda enlace"></a>
-          <a href="./pages/socios.html"><img src="./assets/images/socios.png" alt="socios enlace"></a>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="./pages/historia.html"><img src="./assets/images/historia-carrousel.jpg" class="d-block w-100" alt="Primera Diapositiva"></a>
+                  <div class="carousel-caption d-md-block mx-auto">
+                    <h5 class="bg-danger p-3">HISTORIA</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="./pages/plantel.html"><img src="./assets/images/plantel-carrousel.jpg" class="d-block w-100" alt="Segunda Diapositiva"></a>
+                  <div class="carousel-caption d-md-block mx-auto">
+                    <h5 class="bg-danger p-3">PLANTEL</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="./pages/tienda.html"><img src="./assets/images/tienda-carrousel.jpg" class="d-block w-100" alt="Tercera Diapositiva"></a>
+                  <div class="carousel-caption d-md-block  mx-auto">
+                    <h5 class="bg-danger p-3">TIENDA</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="./pages/socios.html"><img src="./assets/images/socios-carrousel.jpg" class="d-block w-100 h-100" alt="Cuarta Diapositiva"></a>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#miCarrusel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+              </a>
+              <a class="carousel-control-next" href="#miCarrusel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+              </a>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
 
       <h2>ULTIMAS NOTICIAS</h2>
       <section class="news-container">
@@ -124,24 +158,24 @@
           <p>Torneo    ·    Fecha</p>
           <div class="teams-logo-box">
             <img src="./assets/images/escudo prox partido.png" alt="equipo local">
-            <p>X</p>
+            <div>X</div>
             <img src="" alt="equipo visitante">
           </div>
           <div class="teams-box">
             <div class="local-team">
-              <p>IND</p>
+              <div>IND</div>
             </div>
             <div class="versus">
-              <p>X</p>
+              <div>X</div>
             </div>
             <div class="away-team">
-              <p>AWA</p>
+              <div>AWA</div>
             </div>
           </div>
           <div class="match-details">
-            <p>HORARIO</p>
-            <p>ESTADIO</p>
-            <p>ARBITRO</p>
+            <div>HORARIO</div>
+            <div>ESTADIO</div>
+            <div>ARBITRO</div>
           </div>
         </div>
 
@@ -150,24 +184,24 @@
           <p>Torneo    ·    Fecha</p>
           <div class="teams-logo-box">
             <img src="./assets/images/escudo prox partido.png" alt="equipo local">
-            <p>X</p>
+            <div>X</div>
             <img src="" alt="equipo visitante">
           </div>
           <div class="teams-box">
             <div class="local-team">
-              <p>IND</p>
+              <div>IND</div>
             </div>
             <div class="versus">
-              <p>X</p>
+              <div>X</div>
             </div>
             <div class="away-team">
-              <p>AWA</p>
+              <div>AWA</div>
             </div>
           </div>
           <div class="match-details">
-            <p>HORARIO</p>
-            <p>ESTADIO</p>
-            <p>ARBITRO</p>
+            <div>HORARIO</div>
+            <div>ESTADIO</div>
+            <div>ARBITRO</div>
           </div>
         </div>
   

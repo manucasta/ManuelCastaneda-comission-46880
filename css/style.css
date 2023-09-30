@@ -63,8 +63,6 @@ h1 {
 
 .nav-cont {
   margin-top: 0rem;
-  position: sticky;
-  top: 0;
 }
 
 .barra-nav {
@@ -86,33 +84,21 @@ h1 {
   text-decoration: none;
 }
 
+.barra-nav li img{
+  width: 2.1875rem;
+}
+
 .barra-nav:hover{
   padding: 10px;
   transition: 0.5s;
 }
 
-.carrousel-cont {
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
+.carousel-caption {
+  width: fit-content;
 }
 
-.carrousel{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgba(179, 19, 18, 1);
-  width: 80%;
-  height: 10.9375rem;
-  border-radius: 3.125rem;
-  border-color: rgba(153, 5, 4, 1);
-  box-shadow: 5px 5px 5px rgba(153, 5, 4, 1);
-}
-
-.carrousel img{
-  width: 7.5rem;
-  height: 8.75rem;
+#miCarrusel:hover{
+  filter: brightness(70%);
 }
 
 .news-container{
@@ -134,6 +120,7 @@ h1 {
 
 .article:hover{
   transform: scale(1.05);
+  filter: brightness(70%);
 }
 
 .art-1 {
@@ -178,7 +165,8 @@ h1 {
 .section, .section-2{
   position: relative;
   font-size: .75rem;
-  left: .1875rem;
+  left: .3125rem;
+  top: .3125rem;
 }
 
 .title {
@@ -254,7 +242,7 @@ h1 {
   flex-direction: row;
   width: 8.4375rem;
   align-items: center;
-  
+  align-content: center;
 }
 
 .teams-box div{
@@ -277,7 +265,11 @@ h1 {
   color: black;
 }
 
-.match-details p {
+.match-details{
+  margin-top: .625rem;
+}
+
+.match-details div {
   font-size: .75rem;
 }
 
@@ -615,6 +607,11 @@ h3 {
 }
 
 @media (max-width: 660px) {
+  .banner-copas{
+    height: 6.25rem;
+    object-fit: contain;
+  }
+
   .texto-copas-inter-media, .texto-copas-nacio-media{
     font-size: 1rem;
   }
@@ -638,14 +635,30 @@ h3 {
 }
 
 @media (max-width: 550px){
+  .banner-copas{
+    height: 5.3125rem;
+    object-fit: contain;
+  }
+
   .texto-copas-inter-media, .texto-copas-nacio-media{
     display: none;
   }
 }
 
 @media (max-width: 445px) {
-  .barra-nav li a{
-    font-size: .875rem;
+  .banner-copas{
+    height: 4.375rem;
+    object-fit: contain;
+  }
+
+  .barra-nav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .barra-nav li img{
+    display: none;
   }
 
   .news-container{
