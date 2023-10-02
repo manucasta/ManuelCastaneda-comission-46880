@@ -89,10 +89,6 @@ h1 {
   width: 1.875rem;
 }
 
-.barra-nav:hover{
-  padding: 10px;
-  transition: 0.5s;
-}
 
 .carousel-inner img{
   max-height: 20.3125rem;
@@ -107,7 +103,7 @@ h1 {
   filter: brightness(70%);
 }
 
-.carousel-control-prev, .carousel-control-next{
+.carousel-control-prev:hover, .carousel-control-next:hover{
   background-color: rgba(220, 30, 42, 1);
   opacity: 25%;
 }
