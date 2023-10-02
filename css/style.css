@@ -266,6 +266,10 @@ h1 {
   color: #F1ECEA;
 }
 
+.local-team, .versus, .away-team{
+  text-align: center;
+}
+
 .versus {
   background-color: grey;
   color: rgb(54, 54, 54);
