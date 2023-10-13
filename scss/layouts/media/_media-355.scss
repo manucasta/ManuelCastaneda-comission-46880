@@ -1,0 +1,23 @@
+
+@media (max-width: 355px) {
+  h1{
+    font-size: 3rem;
+  }
+
+  .escudo-logo {
+    width: 18.75rem;
+    height: 17.1875rem;
+  }
+
+  .contactos-cont {
+    font-size: map-get($font-size, xsm-size);
+  }
+
+  #copas-historia{
+    width: 18.75rem;
+  }
+
+  .filtro-box p{
+    font-size: map-get($font-size, sm-size);
+  }
+}

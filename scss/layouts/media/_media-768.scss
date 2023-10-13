@@ -1,0 +1,52 @@
+
+@media (max-width: 768px){
+  .texto-copas-inter p{
+    margin-left: .625rem;
+  }
+
+  .texto-copas-nacio p {
+    margin-right: .625rem;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .news-container{
+    @include grid (repeat(2,1fr), repeat(2,18.75rem), none);
+    .article{
+      .title, .title-2 {
+        top: 12.5rem !important;
+      }
+    }
+  }
+  
+  .art-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .art-2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .art-3{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .art-4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .mail {
+    display: none;
+  }
+
+  .actualidad-cont{
+    @include flex (row, center, none, 1.25rem)
+  }
+
+  .catalogo-box{
+    @include grid (repeat(3, 1fr), none, none);
+  }
+}

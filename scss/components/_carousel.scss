@@ -1,0 +1,20 @@
+
+#miCarrusel{
+  :hover{
+    filter: brightness(70%);
+  }
+  .carousel-inner img{
+    max-height: 20.3125rem;
+    height: fit-content;
+    .carousel-caption {
+      width: fit-content;
+    }
+    }
+  .carousel-control-prev, .carousel-control-next{
+    &:hover{
+      background-color: $bg-principal;
+      opacity: 25%;
+    }
+  }
+}
+

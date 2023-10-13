@@ -1,0 +1,17 @@
+
+h1 {
+  font-size: map-get($font-size, h1);
+  text-align: center;
+  margin-top: .625rem;
+}
+
+h2{
+  font-size: map-get($font-size, h2);
+  text-decoration: underline;
+  margin-left: 1.875rem;
+  margin-top: 1.25rem;
+}
+
+h3 {
+  margin-left: 2.1875rem;
+}

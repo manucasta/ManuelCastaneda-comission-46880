@@ -1,0 +1,69 @@
+
+.news-container{
+  @include grid(repeat(3, 1fr), repeat(2, 12.5rem), 10px);
+  height: fit-content;
+  .article {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 300ms;
+    &:hover {
+      transform: scale(1.05);
+      filter: brightness(70%);
+    }
+    div{
+      background-color: $bg-principal;
+      color: $font-color;
+      width: fit-content;
+      padding-left: .1875rem;
+      padding-right: .1875rem;
+    }
+    .section{
+      position: relative;
+      font-size: map-get($font-size, sm-size);
+      left: .3125rem;
+      top: .3125rem;
+    }
+    .title {
+      position: relative;
+      left: .625rem;
+      top: 18.75rem;
+      font-size: map-get($font-size, regular-size);
+    }
+    .title-2{
+      @extend .title;
+      top: 6.25rem;
+    }
+  }  
+}
+
+.art-1 {
+  background: url(https://www.infiernorojo.com/independiente/wp-content/uploads/2023/09/F4k9Ld9WsAAZUIJ-e1693604372702-1000x563.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+
+.art-2{
+  background: url(https://www.cronica.com.ar/__export/1694035935702/sites/cronica/img/2023/09/06/carlos_tevez_independiente_1_crop1694035503610.jpg_1480801792.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+.art-3{
+  background: url(https://media.tycsports.com/files/2023/09/01/612844/santiago-toloza_416x234.webp?v=1);
+  background-size: cover;
+  background-position: center;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.art-4 {
+  background: url(https://locoxelrojo.com/independiente/wp-content/uploads/2023/09/Independiente-hinchada-fuegos-artificiales-741x486.jpg);
+  background-size: cover;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}

@@ -1,0 +1,11 @@
+
+@media (max-width: 550px){
+  .banner-copas{
+    height: 5.3125rem;
+    object-fit: contain;
+  }
+
+  .texto-copas-inter-media, .texto-copas-nacio-media{
+    display: none !important;
+  }
+}

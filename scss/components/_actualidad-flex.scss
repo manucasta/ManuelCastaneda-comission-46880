@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+.actualidad-cont{
+  font-family: 'Courier New', Courier, monospace !important;
+  @include flex (row, space-evenly, none, none);
+  .next-match-box{
+    width: 13.75rem;
+    height: 15rem;
+    background-color: $font-color;
+    color: $bg-dark;
+    border-radius: .625rem;
+    box-shadow: .3125rem .3125rem .3125rem $bg-buttons;
+    .title-next-match {
+      font-size: map-get($font-size, regular-size);
+      }
+    .teams-logo-box img{
+      width: 2.5rem;
+      height: 2.5rem;
+      margin: .3125rem;
+    }
+    .teams-box {
+      width: 8.4375rem;
+      div{
+        width: 2.8125rem;
+        height: 1.5625rem;
+      }
+      .local-team {
+        background-color: $bg-dark;
+        color: $font-color;
+      }
+      
+      .versus {
+        background-color: grey;
+        color: rgb(54, 54, 54);
+      }
+      
+      .away-team {
+        background-color: blue;
+        color: black;
+      }
+    }
+    .match-details{
+      div{
+        font-size: map-get($font-size, sm-size);
+      } 
+    }
+
+    .table-positions {
+      width: 100%;
+      border-collapse: collapse;
+      tr:hover {
+        background-color: rgb(150, 150, 150);
+      }
+      td, th {
+        vertical-align: top;
+        text-align: center;
+        padding: .1875rem;
+        border-bottom: .0625rem solid rgb(139, 138, 138);
+      }
+      th {
+        background-color: rgb(199, 199, 199);
+        font-weight: bold;
+      }
+    }
+  }
+}

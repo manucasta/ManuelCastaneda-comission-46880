@@ -1,0 +1,17 @@
+
+.socios-box{
+  button{
+    background-color: $bg-buttons;
+    color: $bg-socios;
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 7.8125rem;
+    box-shadow: .1875rem .1875rem $bg-shadow;
+    border: none;
+    cursor: pointer;
+    &:active{
+      background-color: $bg-socios;
+      color: $bg-buttons;
+    }
+  }
+}

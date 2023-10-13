@@ -1,0 +1,10 @@
+
+body{
+  font-family: Jockey One;
+  background-color: $bg-principal;
+  color: $font-color; 
+  & ::selection{
+    background-color: $font-color;
+    color: $bg-principal;
+  }
+}

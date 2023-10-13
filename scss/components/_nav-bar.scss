@@ -1,0 +1,16 @@
+
+.barra-nav{
+  background-color: $bg-dark;
+  list-style: none;
+  li{
+    a{
+      font-size: map-get($font-size, regular-size);
+      color: $font-color;
+      @include flex (row, space-between, center, none);
+      text-decoration: none;
+    }
+    img{
+      width: 1.875rem;
+    }
+    }
+} 

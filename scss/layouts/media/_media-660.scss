@@ -1,0 +1,28 @@
+
+@media (max-width: 660px) {
+  .banner-copas{
+    height: 6.25rem;
+    object-fit: contain;
+  }
+
+  .texto-copas-inter-media, .texto-copas-nacio-media{
+    font-size: map-get($font-size, md-size);
+  }
+
+  .contactos-cont {
+    font-size: map-get($font-size, sm-size);
+  }
+
+  .redes-box img{
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+
+  .redes-box p {
+    margin-bottom: .125rem;
+  }
+
+  .catalogo-box{
+    @include grid (repeat(2, 1fr), none, none);
+  }
+}

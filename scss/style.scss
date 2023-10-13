@@ -1,0 +1,30 @@
+
+@import "./utilities/maps";
+@import "./utilities/mixins";
+@import "./utilities/variables";
+
+@import "./base/fonts";
+@import "./base/reset";
+
+@import "./layouts/body";
+@import "./layouts/titles";
+@import "./layouts/footer";
+@import "./layouts/historia";
+
+@import "./components/nav-bar";
+@import "./components/banners";
+@import "./components/carousel";
+@import "./components/news-grid";
+@import "./components/actualidad-flex";
+@import "./components/news-grid";
+@import "./components/catalogo-grid";
+@import "./components/socios-form";
+@import "./components/socios-buttons";
+
+
+@import "./layouts/media/media-768";
+@import "./layouts/media/media-760";
+@import "./layouts/media/media-660";
+@import "./layouts/media/media-550";
+@import "./layouts/media/media-445";
+@import "./layouts/media/media-355";

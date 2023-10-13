@@ -1,0 +1,33 @@
+
+.log-in-box{
+  background-color: $bg-dark;
+  width:18.75rem;
+  line-height: 1.875rem;
+  border-radius: .625rem;
+  border: none;
+  box-shadow: .1875rem .1875rem .3125rem $bg-buttons;
+  input{
+    background-color: $bg-shadow;
+    color: $bg-socios;
+    font-size: map-get($font-size, regular-size);
+    border-radius: .3125rem;
+    border: none;
+    &::placeholder {
+      color: $bg-socios;
+      font-size: map-get($font-size, md-size);
+      opacity: 0.9;
+    }
+  }
+  .submit-button{
+    cursor: pointer;
+    padding: .3125rem;
+    width: 4.6875rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: .625rem;
+    &:active{
+      background-color: $bg-socios;
+      color: $bg-buttons;
+    }
+  }
+}
