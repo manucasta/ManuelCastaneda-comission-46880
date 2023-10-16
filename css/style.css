@@ -459,9 +459,6 @@ h3 {
   }
 }
 @media (max-width: 760px) {
-  .nav-cont .barra-nav li a {
-    font-size: 0.875rem;
-  }
   .texto-copas-inter, .texto-copas-nacio {
     display: none;
   }
@@ -553,16 +550,6 @@ h3 {
     height: 4.375rem;
     -o-object-fit: contain;
        object-fit: contain;
-  }
-  .barra-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: none;
-  }
-  .barra-nav li img {
-    display: none;
   }
   .news-container {
     display: grid;

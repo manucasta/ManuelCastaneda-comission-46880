@@ -1,9 +1,5 @@
 
 @media (max-width: 760px) {
-  .nav-cont .barra-nav li a{
-    font-size: map-get($font-size, md-size);
-  }
-
   .texto-copas-inter, .texto-copas-nacio{
     display: none;
   }
