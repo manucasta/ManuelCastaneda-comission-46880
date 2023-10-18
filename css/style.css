@@ -522,8 +522,8 @@ h3 {
     font-size: 0.75rem;
   }
   .redes-box img {
-    width: 1.875rem;
-    height: 1.875rem;
+    width: 1.875rem !important;
+    height: 1.875rem !important;
   }
   .redes-box p {
     margin-bottom: 0.125rem;
