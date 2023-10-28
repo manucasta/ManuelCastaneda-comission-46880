@@ -63,6 +63,19 @@ h3 {
   width: 25rem;
 }
 
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  padding: 6.25rem;
+}
+.error-container a {
+  color: #F1ECEA;
+  margin-top: 1.25rem;
+}
+
 .navbar {
   background-color: rgb(179, 19, 18);
 }
