@@ -1,0 +1,9 @@
+
+.error-container{
+  @include flex (column, center, center, none);
+  padding: 6.25rem;
+  a{
+    color: $font-color;
+    margin-top: 1.25rem;
+  }
+}
